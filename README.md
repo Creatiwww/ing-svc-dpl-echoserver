@@ -2,6 +2,7 @@
 This is a python socket server that echos back any http request made to it.
 
 ## Prerequisits
+  K8s cluster with Ingress controller  
 
 ## Build Docker
 ```
