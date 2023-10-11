@@ -5,7 +5,7 @@ This is a python socket server that echos back any http request made to it.
 
 ## Build Docker
 ```
-  docker build -t echo-server:latest .
+  docker build -t echo-server:latest ./app/Dockerfile
   docker tag echo-server:latest creatiwww/devops_test_faraway:amd64-latest
   docker push creatiwww/echo-server:amd64-latest
 ```
