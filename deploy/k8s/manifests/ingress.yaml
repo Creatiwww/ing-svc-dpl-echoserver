@@ -8,9 +8,10 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
+  # - host: test.sw.ext.local
   - http:
       paths:
-      - path: /
+      - path: /echo-server
         pathType: Prefix
         backend:
           service:

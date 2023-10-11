@@ -7,19 +7,19 @@ Make a custom request:
 ```
 $ curl --header "Favorite-Color: Purple" \
       --data "param1=value1&param2=value2"\
-      http://localhost:5000/hello-mars
+      http://localhost:5000/hello-world
 ```
 
 Prints:
 ```
 $ python echo.py
 Echoing from http://localhost:5000
-127.0.0.1 - Thu Mar 15 23:43:27 2018 - POST /hello-mars HTTP/1.1
+127.0.0.1 - Thu Mar 15 23:43:27 2018 - POST /hello-world HTTP/1.1
 ```
 
 Returns
 ```
-POST /hello-mars HTTP/1.1
+POST /hello-world HTTP/1.1
 Host: localhost:5000
 User-Agent: curl/7.54.0
 Accept: */*
