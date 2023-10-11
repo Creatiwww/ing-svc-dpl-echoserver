@@ -21,3 +21,8 @@ This is a python socket server that echos back any http request made to it.
 ING_URL=$(kubectl get ingress ingress-resource -o jsonpath="{.status.loadBalancer.ingress[0].ip}" -n playground)
 curl -XPOST $ING_URL/echo-server -d '{"Hello":"World!"}'
 ```
+
+## Clean up
+```
+kubectl delete -f deploy/k8s/manifests -n playground
+```
